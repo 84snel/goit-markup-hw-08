@@ -1,0 +1,10 @@
+.direction-title,
+.team-title,
+.clients-title {
+  @include font(700, 28px, 1.179, 0.03em);
+  text-align: center;
+
+  @include respond(desktop-min) {
+    @include font(700, 36px, 1.167, 0.03em);
+  }
+}

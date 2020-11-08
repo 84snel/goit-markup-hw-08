@@ -1,0 +1,49 @@
+.portfolio-filter {
+  display: flex;
+
+  @include respond(tablet-max) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: -7.5px -4px 47.5px -4px;
+  }
+
+  @include respond(tablet-min) {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  @include respond(desktop-min) {
+    margin-bottom: 65px;
+  }
+
+  &-item {
+    @include respond(tablet-max) {
+      margin: 7.5px 4px;
+    }
+
+    @include respond(tablet-min) {
+      &:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+
+    &-btn {
+      border-radius: 4px;
+      border-style: none;
+      padding: 6px 22px;
+
+      @include font(500, 16px, 1.625, 0.03em);
+      text-align: center;
+      background-color: rgb(245, 244, 250);
+      transition: 250ms $t-timing-function;
+
+      &:hover,
+      &:focus {
+        color: rgb(255, 255, 255);
+        background-color: $accent-text-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        outline-style: none;
+      }
+    }
+  }
+}

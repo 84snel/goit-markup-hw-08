@@ -1,0 +1,48 @@
+.wrapper {
+  padding: 0px 15px;
+  margin: 0 auto;
+
+  .hero & {
+    padding-top: 119px;
+    padding-bottom: 119px;
+  }
+
+  .benefits &,
+  .team &,
+  .сlients &,
+  .portfolio &,
+  .footer & {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include respond(mobile-min) {
+    width: 480px;
+  }
+
+  @include respond(tablet-min) {
+    width: 768px;
+  }
+
+  @include respond(desktop-min) {
+    width: 1200px;
+    .hero & {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .benefits &,
+    .team &,
+    .сlients &,
+    .portfolio & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    .direction & {
+      padding-bottom: 94px;
+    }
+    .footer & {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.header-menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  &-icon {
+    opacity: 1;
+    transition: opacity 250ms $t-timing-function, fill 250ms $t-timing-function;
+  }
+
+  &-close-icon {
+    opacity: 0;
+    transition: opacity 250ms $t-timing-function, fill 250ms $t-timing-function;
+  }
+
+  &.is-open &-close-icon {
+    opacity: 1;
+  }
+
+  &.is-open &-icon {
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
+    > svg {
+      fill: $accent-text-color;
+    }
+  }
+
+  @include respond(tablet-min) {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: block;
+  background-color: #fff;
+
+  @include respond(tablet-max) {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 0;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms $t-timing-function, visiblity 250ms $t-timing-function;
+
+    &.is-open {
+      z-index: 2;
+      visibility: visible;
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+
+  @include respond(tablet-min) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

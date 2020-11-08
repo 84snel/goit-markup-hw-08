@@ -1,0 +1,17 @@
+.hero {
+  background-color: rgb(196, 196, 196);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/bg_hero.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: scroll;
+  text-align: center;
+
+  &-title {
+    @include font(900, 26px, 1.615, 0.06em, rgb(255, 255, 255));
+    text-transform: uppercase;
+
+    @include respond(desktop-min) {
+      @include font(900, 44px, 1.364, 0.06em, rgb(255, 255, 255));
+    }
+  }
+}

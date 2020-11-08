@@ -1,0 +1,42 @@
+@mixin font($fw, $fs, $lh, $ls, $color: $basic-text-color, $f: $basic-font, $s: normal) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $color;
+  font-family: $f;
+  font-style: $s;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==mobile-min {
+    @media screen and (min-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet-min {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktop-min {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktop-max {
+    @media screen and (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet-max {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile-max {
+    @media screen and (max-width: 479px) {
+      @content;
+    }
+  }
+}

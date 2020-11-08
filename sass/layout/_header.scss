@@ -1,0 +1,132 @@
+.header {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(236, 236, 236);
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include respond(tablet-max) {
+  .navigation-list > li + li {
+    margin-top: 35px;
+  }
+
+  .address-list {
+    margin-top: 48px;
+    > li + li {
+      margin-top: 16px;
+    }
+  }
+}
+
+@include respond(tablet-min) {
+  .navigation-list {
+    margin-left: 88px;
+    > li + li {
+      margin-left: 50px;
+    }
+  }
+  .address-list {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-list {
+    > li + li {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include respond(desktop-min) {
+  .address-list {
+    > li + li {
+      margin-left: 30px;
+    }
+  }
+}
+
+.navigation-list {
+  &-link {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 12px;
+    @include font(500, 18px, 1.167, 0.02em);
+    @include respond(tablet-min) {
+      padding-top: 32px;
+      padding-bottom: 31px;
+      @include font(500, 14px, 1.143, 0.02em);
+    }
+    transition: color 250ms $t-timing-function, fill 250ms $t-timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+      fill: $accent-text-color;
+    }
+  }
+}
+
+@include respond(tablet-min) {
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-address {
+  &-icon {
+    margin-right: 10px;
+    fill: $description-text-color;
+    transition: color 250ms $t-timing-function, fill 250ms $t-timing-function;
+  }
+
+  &-link {
+    @include font(500, 18px, 1.167, 0.02em, $description-text-color);
+    @include respond(tablet-min) {
+      @include font(500, 12px, 1.167, 0.02em, $description-text-color);
+    }
+    @include respond(desktop-min) {
+      @include font(500, 14px, 1.167, 0.02em, $description-text-color);
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 31px;
+    }
+    transition: color 250ms $t-timing-function, fill 250ms $t-timing-function;
+
+    &:hover,
+    &:focus,
+    &:hover .header-address-icon,
+    &:focus .header-address-icon {
+      color: $accent-text-color;
+      fill: $accent-text-color;
+    }
+  }
+}
+
+@include respond(desktop-min) {
+  .address-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#active-page {
+  color: $accent-text-color;
+
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+}

@@ -1,0 +1,96 @@
+.team {
+  background-color: rgb(245, 244, 250);
+
+  &-list {
+    display: block;
+    margin-top: 30px;
+  }
+
+  @include respond(tablet-min) {
+    &-list {
+      display: flex;
+      margin: 15px -15px -15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-list {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include respond(desktop-min) {
+    &-list {
+      margin-top: 35px;
+    }
+  }
+}
+
+@include respond(tablet-max) {
+  .team-list-item + .team-list-item {
+    margin-top: 30px;
+  }
+}
+
+.team-list-item {
+  max-width: 450px;
+
+  @include respond(tablet-min) {
+    max-width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @include respond(desktop-min) {
+    max-width: calc((100% - 8 * 15px) / 4);
+  }
+  padding-bottom: 24px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &-name {
+    @include font(500, 16px, 1.188, 0.03em);
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &-spec {
+    @include font(400, 16px, 1.188, 0.03em, $description-text-color);
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &-groop {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    & > li + li {
+      margin-left: 10px;
+    }
+  }
+
+  &-slink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 250ms $t-timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-text-color;
+
+      .team-list-item-slink-icon {
+        fill: rgb(255, 255, 255);
+      }
+    }
+
+    &-icon {
+      fill: $base-icon-color;
+      transition: fill 250ms $t-timing-function;
+    }
+  }
+}

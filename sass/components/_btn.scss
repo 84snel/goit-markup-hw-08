@@ -1,0 +1,18 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  border-style: none;
+  outline-style: none;
+  margin-top: 30px;
+
+  text-align: center;
+
+  @include font(700, 16px, 1.875, 0.06em, rgb(255, 255, 255));
+  background: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
