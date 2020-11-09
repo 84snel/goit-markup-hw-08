@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, nofollow" />
     <title>WebStudio-Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
@@ -75,7 +76,39 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/techkriak.jpg" alt="сайт Технокряк" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/tkr@1x.webp 1x, ./img/portfolio/desk/tkr@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/tkr@1x.jpg 1x, ./img/portfolio/desk/tkr@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/tkr@1x.webp 1x, ./img/portfolio/tab/tkr@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/tkr@1x.jpg 1x, ./img/portfolio/tab/tkr@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/tkr@1x.webp 1x, ./img/portfolio/mob/tkr@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/tkr@1x.jpg 1x, ./img/portfolio/mob/tkr@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <img alt="сайт Технокряк" src="./img/portfolio/mob/tkr@1x.jpg" />
+                  </picture>
                   <p>
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак
                     на защищённые сервера конкурентов.
@@ -90,7 +123,31 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/new_orlean.jpg" alt="дизайн постера New Orlean vs Golden Star" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/no@1x.webp 1x, ./img/portfolio/desk/no@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/no@1x.jpg 1x, ./img/portfolio/desk/no@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/no@1x.webp 1x, ./img/portfolio/tab/no@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./img/portfolio/tab/no@1x.jpg 1x, ./img/portfolio/tab/no@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                    <source
+                      srcset="./img/portfolio/mob/no@1x.webp 1x, ./img/portfolio/mob/no@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source srcset="./img/portfolio/mob/no@1x.jpg 1x, ./img/portfolio/mob/no@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                    <img alt="дизайн постера New Orlean vs Golden Star" src="./img/portfolio/mob/no@1x.jpg" />
+                  </picture>
                   <p>New Orlean vs Golden Star</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -102,7 +159,40 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/seafood.jpg" alt="приложение для ресторана Seafood" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/sea@1x.webp 1x, ./img/portfolio/desk/sea@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/sea@1x.jpg 1x, ./img/portfolio/desk/sea@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/sea@1x.webp 1x, ./img/portfolio/tab/sea@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/sea@1x.jpg 1x, ./img/portfolio/tab/sea@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/sea@1x.webp 1x, ./img/portfolio/mob/sea@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/sea@1x.jpg 1x, ./img/portfolio/mob/sea@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <img alt="приложение для ресторана Seafood" src="./img/portfolio/mob/sea@1x.jpg" />
+                  </picture>
+
                   <p>Seafood</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -114,7 +204,32 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/prime.jpg" alt="проект Prime" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/pr@1x.webp 1x, ./img/portfolio/desk/pr@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/pr@1x.jpg 1x, ./img/portfolio/desk/pr@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/pr@1x.webp 1x, ./img/portfolio/tab/pr@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./img/portfolio/tab/pr@1x.jpg 1x, ./img/portfolio/tab/pr@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                    <source
+                      srcset="./img/portfolio/mob/pr@1x.webp 1x, ./img/portfolio/mob/pr@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source srcset="./img/portfolio/mob/pr@1x.jpg 1x, ./img/portfolio/mob/pr@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                    <img alt="проект Prime" src="./img/portfolio/mob/pr@1x.jpg" />
+                  </picture>
+
                   <p>Prime</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -126,7 +241,32 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/boxes.jpg" alt="приложение для проекта Boxes" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/bx@1x.webp 1x, ./img/portfolio/desk/bx@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/bx@1x.jpg 1x, ./img/portfolio/desk/bx@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/bx@1x.webp 1x, ./img/portfolio/tab/bx@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./img/portfolio/tab/bx@1x.jpg 1x, ./img/portfolio/tab/bx@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                    <source
+                      srcset="./img/portfolio/mob/bx@1x.webp 1x, ./img/portfolio/mob/bx@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source srcset="./img/portfolio/mob/bx@1x.jpg 1x, ./img/portfolio/mob/bx@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                    <img alt="приложение для проекта Boxes" src="./img/portfolio/mob/bx@1x.webp" />
+                  </picture>
+
                   <p>Boxes</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -138,7 +278,40 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/no_borders.jpg" alt="веб-сайт Inspiration has no Borders" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/ins@1x.webp 1x, ./img/portfolio/desk/ins@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/ins@1x.jpg 1x, ./img/portfolio/desk/ins@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/ins@1x.webp 1x, ./img/portfolio/tab/ins@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/ins@1x.jpg 1x, ./img/portfolio/tab/ins@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/ins@1x.webp 1x, ./img/portfolio/mob/ins@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/ins@1x.jpg 1x, ./img/portfolio/mob/ins@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <img alt="веб-сайт Inspiration has no Borders" src="./img/portfolio/mob/ins@1x.jpg" />
+                  </picture>
+
                   <p>Inspiration has no Borders</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -150,7 +323,31 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/limited.jpg" alt="дизайн для издания Limited Edition" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/le@1x.webp 1x, ./img/portfolio/desk/le@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/le@1x.jpg 1x, ./img/portfolio/desk/le@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/le@1x.webp 1x, ./img/portfolio/tab/le@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./img/portfolio/tab/le@1x.jpg 1x, ./img/portfolio/tab/le@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                    <source
+                      srcset="./img/portfolio/mob/le@1x.webp 1x, ./img/portfolio/mob/le@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source srcset="./img/portfolio/mob/le@1x.jpg 1x, ./img/portfolio/mob/le@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                    <img alt="дизайн для издания Limited Edition" src="./img/portfolio/mob/le@1x.jpg" />
+                  </picture>
                   <p>Limited Edition</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -162,7 +359,40 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/lab.jpg" alt="проект LAB" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/lab@1x.webp 1x, ./img/portfolio/desk/lab@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/lab@1x.jpg 1x, ./img/portfolio/desk/lab@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/lab@1x.webp 1x, ./img/portfolio/tab/lab@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/lab@1x.jpg 1x, ./img/portfolio/tab/lab@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/lab@1x.webp 1x, ./img/portfolio/mob/lab@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/mob/lab@1x.jpg 1x, ./img/portfolio/mob/lab@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <img alt="проект LAB" src="./img/portfolio/mob/lab@1x.jpg" />
+                  </picture>
+
                   <p>LAB</p>
                 </div>
                 <div class="portfolio-list-container">
@@ -174,7 +404,32 @@
             <li class="portfolio-list-item">
               <a class="link" href="">
                 <div class="portfolio-list-item-img">
-                  <img src="./img/portfolio/grow_business.jpg" alt="приложение Growing Business" width="450" />
+                  <picture>
+                    <source
+                      srcset="./img/portfolio/desk/gb@1x.webp 1x, ./img/portfolio/desk/gb@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/desk/gb@1x.jpg 1x, ./img/portfolio/desk/gb@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/tab/gb@1x.webp 1x, ./img/portfolio/tab/gb@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./img/portfolio/tab/gb@1x.jpg 1x, ./img/portfolio/tab/gb@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                    <source
+                      srcset="./img/portfolio/mob/gb@1x.webp 1x, ./img/portfolio/mob/gb@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source srcset="./img/portfolio/mob/gb@1x.jpg 1x, ./img/portfolio/mob/gb@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                    <img alt="приложение Growing Business" src="./img/portfolio/mob/gb@1x.webp" />
+                  </picture>
+
                   <p>Growing Business</p>
                 </div>
                 <div class="portfolio-list-container">

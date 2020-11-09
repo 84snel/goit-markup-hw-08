@@ -1,10 +1,29 @@
 .hero {
   background-color: rgb(196, 196, 196);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/bg_hero.jpg');
+  background-image: $grad, url('../img/bg_hero/hero_mob@1x.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: scroll;
   text-align: center;
+
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background-image: $grad, url('../img/bg_hero/hero_mob@2x.jpg');
+  }
+
+  @media screen and (min-width: 576px) {
+    background-image: $grad, url('../img/bg_hero/hero_tab@1x.jpg');
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: $grad, url('../img/bg_hero/hero_tab@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    background-image: $grad, url('../img/bg_hero/hero_desk@1x.jpg');
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: $grad, url('../img/bg_hero/hero_desk@2x.jpg');
+    }
+  }
 
   &-title {
     @include font(900, 26px, 1.615, 0.06em, rgb(255, 255, 255));
