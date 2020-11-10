@@ -30,7 +30,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  min-width: 320px;
+  min-width: 324px;
 }
 
 img {
@@ -430,6 +430,7 @@ img {
 
 .check-icon {
   display: inline-block;
+  flex-shrink: 0;
   width: 16px;
   height: 15px;
   margin-right: 8.38px;
