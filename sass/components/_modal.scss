@@ -143,7 +143,8 @@
   display: inline-flex;
   align-items: center;
   margin-top: 20px;
-  @include font(400, 12px, 1.667, 0.03em, $description-text-color);
+  @include font(400, 12px, 1.167, 0.03em, $description-text-color);
+  transition: 250ms $t-timing-function 250ms;
   @include respond(desktop-min) {
     @include font(400, 14px, 1.714, 0.03em, $description-text-color);
   }

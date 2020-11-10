@@ -264,6 +264,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .address-list {
+    display: flex;
+    align-items: center;
+  }
   .address-list > li + li {
     margin-left: 30px;
   }
@@ -359,13 +363,6 @@ img {
 .header-address-link:focus .header-address-icon {
   color: #2196f3;
   fill: #2196f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .address-list {
-    display: flex;
-    align-items: center;
-  }
 }
 
 #active-page {
